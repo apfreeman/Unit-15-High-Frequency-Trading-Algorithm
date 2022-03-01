@@ -25,19 +25,19 @@ I have competed the following:
 
 The following shows the DataFrame returned from the Alpaca API containing only close prices.
 
-![[df_closing_prices]](https://github.com/apfreeman/Unit-15-High-Frequency-Trading-Algorithm/blob/main/Images/df_closing_prices.PNG)
+![[df_closing_prices]](https://github.com/apfreeman/Unit-15-High-Frequency-Trading-Algorithm/blob/main/Images/df_closing_prices.PNG?raw=true)
 
 
 #### Computing Returns
 
 The following shows percent change computed at 1 min intervals
 
-![[df_returns]](https://github.com/apfreeman/Unit-15-High-Frequency-Trading-Algorithm/blob/main/Images/df_returns.PNG)
+![[df_returns]](https://github.com/apfreeman/Unit-15-High-Frequency-Trading-Algorithm/blob/main/Images/df_returns.PNG?raw=true)
 
 
 The following shows the 1, 5, and 10 minute momentums that will be used to predict the forward returns
 
-![[df_momentums]](https://github.com/apfreeman/Unit-15-High-Frequency-Trading-Algorithm/blob/main/Images/df_momentums.PNG)
+![[df_momentums]](https://github.com/apfreeman/Unit-15-High-Frequency-Trading-Algorithm/blob/main/Images/df_momentums.PNG?raw=true)
 
 
 
@@ -47,7 +47,7 @@ The following shows the 1, 5, and 10 minute momentums that will be used to predi
 
 Data has been split into testing and training sets using shuffle = False. From there the data has been resampled ready for modelling. 
 
-![[resampled]](https://github.com/apfreeman/Unit-15-High-Frequency-Trading-Algorithm/blob/main/Images/resampled.PNG)
+![[resampled]](https://github.com/apfreeman/Unit-15-High-Frequency-Trading-Algorithm/blob/main/Images/resampled.PNG?raw=true)
 
 
 
@@ -89,15 +89,15 @@ In this final section, I have created the algo-trading program by pulling live d
 
 #### Develop the Algorithm
 
-Using the data from the API and the best machine learning algorithm as determined above, the following buy predictions have been determined. Included are the buy stock tikers, the total available capital, the capital per stock and the iteration through the buy_dict to determine the number of shares to buy.
+Using the data from the API and the best machine learning algorithm as determined above, the following buy predictions have been determined. Included are the buy stock tickers, the total available capital, the capital per stock and the iteration through the buy_dict to determine the number of shares to buy.
 
-![[buy_dict]](https://github.com/apfreeman/Unit-15-High-Frequency-Trading-Algorithm/blob/main/Images/buy_dict.PNG)
+![[buy_dict]](https://github.com/apfreeman/Unit-15-High-Frequency-Trading-Algorithm/blob/main/Images/buy_dict.PNG?raw=true)
 
 
 #### Automate the Algorithm
 
-A trade function has been created to automate the end to end process of trading using this algorithm. Using the schedule model the algorithm has been scheduled to run ever minute at 5 seconds past the minute. The algorithm uses the Alpaca API to check if the market is open and will only trade during this time. 
+A trade function has been created to automate the end to end process of trading using this algorithm. Using the schedule model the algorithm has been scheduled to run ever minute at 5 seconds past the minute. The algorithm uses the Alpaca API to check if the market is open and will only trade when the market is open. 
 
 
-![[schedule]](https://github.com/apfreeman/Unit-15-High-Frequency-Trading-Algorithm/blob/main/Images/schedule.PNG)
+![[schedule]](https://github.com/apfreeman/Unit-15-High-Frequency-Trading-Algorithm/blob/main/Images/schedule.PNG?raw=true)
 
